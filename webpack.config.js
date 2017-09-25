@@ -3,7 +3,7 @@ module.exports = {
     entry: './index',
     output: {
         filename: 'node-upload.js',
-        libraryTarget: "commonjs2",
+        libraryTarget: "commonjs",
     },
     // don't know what happend really
     node: {
