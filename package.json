@@ -2,7 +2,7 @@
   "name": "dotload",
   "version": "1.0.0",
   "description": "upload directory to a remote server using node",
-  "main": "node-upload.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -24,15 +24,6 @@
   "homepage": "https://github.com/githubxiaowen/node-upload#readme",
   "dependencies": {
     "formidable": "^1.1.1",
-    "mkdirp": "^0.5.1",
-    "webpack": "^3.6.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "ts-loader": "^2.3.7",
-    "typescript": "^2.5.2"
+    "mkdirp": "^0.5.1"
   }
 }

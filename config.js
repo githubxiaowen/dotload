@@ -1,7 +1,7 @@
 module.exports = {
-    hostname: '10.95.97.27', //host ip
+    hostname: 'localhost', //host ip
     port: 9001, // port
     method: 'POST',
     path: '/upload',
-    to: '/root/node-receiver/dest/'  // target static folder
+    to: 'dest/'  // target static folder;absolute path recommend
 }
