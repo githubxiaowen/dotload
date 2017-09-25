@@ -1,8 +1,8 @@
 {
-  "name": "upload",
+  "name": "dotload",
   "version": "1.0.0",
   "description": "upload directory to a remote server using node",
-  "main": "index.js",
+  "main": "node-upload.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
