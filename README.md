@@ -57,3 +57,4 @@ upload(config,uploadPath)
 ### References
 [FormData](https://github.com/form-data/form-data)
 
+[RFC](https://tools.ietf.org/html/rfc2046#section-5.1)
