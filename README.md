@@ -32,20 +32,20 @@ Content-Type: <mimetype><crlf><crlf>       #optional
 npm i -S dotload
 2. vim server.js
 
-```
+```js
 import {createServer} from 'dotload'
 import config from './config'
 createServer(config)
 ```
 3. start server
-```
+```js
 pm2 start server.js --name receiverServer
 ```
 ### Client
 1. install
 npm i -S dotload
 2. vim upload.js
-```
+```js
 import {upload} from 'dotload'
 import config from './config'
 const uploadPath='src/'
