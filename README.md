@@ -30,11 +30,11 @@ Content-Type: <mimetype><crlf><crlf>       #optional
 edit config.js first
 ```js
 module.exports = {
-    hostname: 'localhost', //host ip
+    hostname: 'localhost', //target host ip
     port: 9001, // port
     method: 'POST',
     path: '/upload',
-    to: '/dest/'  // target static folder;absolute path recommend
+    to: '/dest/'  // static folder of the target host
 }
 ```
 #### Server
