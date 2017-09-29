@@ -2,7 +2,7 @@
 ### 原理
 node本地读取文件内容，仿照form表单提交的过程，向配置了接收服务的远端机器发送POST请求，服务端通过formidable组件对请求内容解析，放置在配置好的目标文件夹下
 
-### 表单格式
+### Simple Form Type
 ```
 #First boundary
 --<boundary><crlf>
