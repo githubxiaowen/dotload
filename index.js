@@ -1,7 +1,5 @@
-const upload=require('./lib/upload')
-const createServer=require('./lib/receiver');
-
-module.exports={
-    upload,
-    createServer
+import upload from './lib/upload'
+import createServer from './lib/receiver'
+export default{
+    upload,createServer
 }

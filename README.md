@@ -26,9 +26,32 @@ Content-Type: <mimetype><crlf><crlf>       #optional
 # Last boundary
 --<boundary>--<crlf>
 ```
-### Get Started
-#### 配置服务端
+### Usage
+#### Server
+1. install
+npm i -S dotload
+2. vim server.js
 
+```
+import {createServer} from 'dotload'
+import config from './config'
+createServer(config)
+```
+3. start server
+```
+pm2 start server.js --name receiverServer
+```
+### Client
+1. install
+npm i -S dotload
+2. vim upload.js
+```
+import {upload} from 'dotload'
+import config from './config'
+const uploadPath='src/'
+upload(config,uploadPath)
+```
+3. node upload.js
 
 
 ### References
