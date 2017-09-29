@@ -26,8 +26,19 @@ Content-Type: <mimetype><crlf><crlf>       #optional
 # Last boundary
 --<boundary>--<crlf>
 ```
-### Usage
+### Usage[
+edit config.js first
+```js
+module.exports = {
+    hostname: 'localhost', //host ip
+    port: 9001, // port
+    method: 'POST',
+    path: '/upload',
+    to: '/dest/'  // target static folder;absolute path recommend
+}
+```
 #### Server
+
 1. install
 npm i -S dotload
 2. vim server.js
