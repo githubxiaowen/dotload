@@ -3,5 +3,5 @@ module.exports = {
     port: 9001, // port
     method: 'POST',
     path: '/upload',
-    to: '/dest/'  // target static folder;absolute path recommend
+    to: '/Users/didi/work/dotload/target/'  // target static folder;absolute path recommend
 }
