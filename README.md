@@ -1,6 +1,6 @@
 # Node文件上传
-### 原理
-node本地读取文件内容，仿照form表单提交的过程，向配置了接收服务的远端机器发送POST请求，服务端通过formidable组件对请求内容解析，放置在配置好的目标文件夹下
+### How it works
+Dotload reads files from local hard disk, post the formdata built by rfc rules to the remote server. Data will be parsed and saved to the disk as files. All you need is a *config.js*
 
 ### Simple Form Type
 ```
@@ -26,15 +26,16 @@ Content-Type: <mimetype><crlf><crlf>       #optional
 # Last boundary
 --<boundary>--<crlf>
 ```
-### Usage[
+### Usage
+
 edit config.js first
 ```js
 module.exports = {
-    hostname: 'localhost', //target host ip
-    port: 9001, // port
-    method: 'POST',
-    path: '/upload',
-    to: '/dest/'  // static folder of the target host
+  hostname: 'localhost', //host ip
+  port: 9000, // port
+  method: 'POST',
+  path: '/upload',
+  to: '/Users/xiaowen/work/dotload/test/target/' 
 }
 ```
 #### Server
@@ -44,8 +45,8 @@ npm i -S dotload
 2. vim server.js
 
 ```js
-import {createServer} from 'dotload'
-import config from './config'
+const createServer = require('../lib/receiver')
+const config = require('./config')
 createServer(config)
 ```
 3. start server
@@ -57,13 +58,18 @@ pm2 start server.js --name receiverServer
 npm i -S dotload
 2. vim upload.js
 ```js
-import {upload} from 'dotload'
-import config from './config'
-const uploadPath='src/'
+const upload = require('../lib/upload')
+const config = require('./config')
+const uploadPath='test/source/'
 upload(config,uploadPath)
 ```
-3. node upload.js
+3. test
+```js
+node test/upload.js
+```
 
+# TODO
+- [ ] remove the dependency of formidable ,parse the data using node
 
 ### References
 [FormData](https://github.com/form-data/form-data)
