@@ -1,8 +1,8 @@
-
 module.exports = {
-  hostname: 'localhost', //host ip
-  port: 9000, // port
-  method: 'POST',
-  path: '/upload',
-  to: '/Users/didi/work/dotload/test/target/'  // target static folder;absolute path recommend
+    hostname: 'localhost', //host ip
+    port: 9001, // port
+    method: 'POST',
+    path: '/upload',
+    to: '/Users/didi/work/github/dotload/target/', // 最后的/别忘了
+    from: 'source/' // 使用相对路径
 }

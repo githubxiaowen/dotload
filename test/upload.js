@@ -1,4 +1,3 @@
-const upload = require('../lib/upload')
+const { upload } = require('../dist/upload')
 const config = require('./config')
-const uploadPath='test/source/'
-upload(config,uploadPath)
+upload(config)
