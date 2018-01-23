@@ -35,7 +35,7 @@ module.exports = {
   port: 9000, // port
   method: 'POST',
   path: '/upload',
-  to: '/Users/xiaowen/work/dotload/test/target/' 
+  to: '/Users/xiaowen/work/dotload/test/target/'
 }
 ```
 #### Server
@@ -70,7 +70,7 @@ node test/upload.js
 
 # TODO
 - [ ] remove the dependency of formidable ,parse the data using node
-
+- [ ] callback 2 promise
 ### References
 [FormData](https://github.com/form-data/form-data)
 
